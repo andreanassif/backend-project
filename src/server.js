@@ -1,4 +1,6 @@
 import express from 'express'
+import productsRouter from "./routes/products.js";
+import cartRouter from "./routes/cart.js";
 
 //inicio app
 const app = express()
@@ -17,10 +19,9 @@ app.get("/", (req, res) =>{
 });
 
 //routers
-import productsRouter from "./routes/products";
+
 app.use("/api/products", productsRouter);
 
-import cartRouter from "./routes/cart";
-app.use("/api/cart", cartRouter);
 
+app.use("/api/cart", cartRouter);
 

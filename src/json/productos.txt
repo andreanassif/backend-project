@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "isAdmin": true,
+      "name": "Lapicero personalizado",
+      "price": 2200,
+      "url": "https://res.cloudinary.com/dhndpus6m/image/upload/v1659133158/Locosen3D/lapicero-mojo-gris_dr2hxb.jpg",
+      "description": "Lapiceros personalizados, varios colores disponibles",
+      "stock": 15
+    },
+    {
+      "id": 2,
+      "timestamp_prod": 1667789841083,
+      "name": "Lapicero personalizado",
+      "price": 2200,
+      "url": "https://res.cloudinary.com/dhndpus6m/image/upload/v1659133158/Locosen3D/lapicero-mojo-gris_dr2hxb.jpg",
+      "description": "Lapiceros personalizados, varios colores disponibles",
+      "stock": 15
+    },
+    {
+      "id": 3,
+      "timestamp_prod": 1667790276679,
+      "name": "Lapicero personalizado 3",
+      "price": 2500,
+      "url": "https://res.cloudinary.com/dhndpus6m/image/upload/v1659133158/Locosen3D/lapicero-mojo-gris_dr2hxb.jpg",
+      "description": "Lapiceros personalizados, varios colores disponibles",
+      "stock": 20
+    },
+    {
+      "id": 3,
+      "timestamp_prod": 1667793293444,
+      "name": "Lapicero personalizado 3 updated",
+      "price": 3300,
+      "url": "https://res.cloudinary.com/dhndpus6m/image/upload/v1659133158/Locosen3D/lapicero-mojo-gris_dr2hxb.jpg",
+      "description": "Lapiceros personalizados, varios colores disponibles",
+      "stock": 20
+    }
+  ]
+}

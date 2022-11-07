@@ -1,5 +1,5 @@
 import express from "express";
-import { Products } from "../services/products";
+import { Products } from "../services/products.js";
 
 export const getProducts = async (req, res) => {
   try {
@@ -25,8 +25,8 @@ export const getProductById = async (req, res) => {
 
 export const saveProduct = async (req, res) => {
   try {
-    const { name, price, url, description, code, stock } = req.body;
-    if (!name || !price || !url || !description || !code || !stock)
+    const { name, price, url, description, stock } = req.body;
+    if (!name || !price || !url || !description || !stock)
       return res.status(400).send("Empty fields");
 
     const newProduct = {
@@ -52,8 +52,8 @@ export const updateProductById = async (req, res) => {
     console.log(prod)
     if (!prod) return res.status(400).send("Product not found");
 
-    const { name, price, url, description, code, stock } = req.body;
-    if (!name && !price && !url && !description && !code && !stock)
+    const { name, price, url, description, stock } = req.body;
+    if (!name && !price && !url && !description && !stock)
       return res.status(400).send("Empty/wrong fields");
 
     const updateProduct = {
@@ -61,7 +61,6 @@ export const updateProductById = async (req, res) => {
       price: price ? price : prod.price,
       url: url ? url : prod.url,
       description: description ? description : prod.description,
-      code: code ? code : prod.code,
       stock: stock ? stock : prod.stock,
     };
 

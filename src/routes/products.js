@@ -1,6 +1,6 @@
 import express from "express";
-import { deleteProductById, getProductById, getProducts, saveProduct, updateProductById } from "../controllers/products";
-import { verifyRole } from "../middlewares/role";
+import { deleteProductById, getProductById, getProducts, saveProduct, updateProductById } from "../controllers/products.js";
+import { verifyRole } from "../middlewares/role.js";
 
 const productsRouter = express.Router();
 
