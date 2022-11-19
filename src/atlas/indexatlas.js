@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 import { productsModel } from "./models/productos.js";
+import { cartModel } from "./models/carrito.js";
+
 
 const URL ="mongodb+srv://nassif:benicio2022@locosen3d.4crkgqb.mongodb.net/locosen3d"
 
