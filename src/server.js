@@ -1,6 +1,7 @@
 import express from 'express'
 import productsRouter from "./routes/products.js";
 import cartRouter from "./routes/cart.js";
+import mongoose from "mongoose";
 
 //inicio app
 const app = express()
@@ -24,4 +25,7 @@ app.use("/api/products", productsRouter);
 
 
 app.use("/api/cart", cartRouter);
+
+
+
 
