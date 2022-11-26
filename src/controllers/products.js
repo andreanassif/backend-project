@@ -1,5 +1,7 @@
 import express from "express";
-import { Products } from "../services/products.js";
+import { productosDAO } from "../config/config.dao.js";
+import { Products } from "../services/products.js"; // => llamar al DAOS
+
 
 export const getProducts = async (req, res) => {
   try {
